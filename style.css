@@ -1,0 +1,94 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #6dd5fa, #2980b9);
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    transition: background 0.5s, color 0.5s;
+}
+
+body.dark {
+    background: #2c3e50;
+    color: #ecf0f1;
+}
+
+.weather-app {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.theme-toggle {
+    margin-bottom: 20px;
+}
+
+.theme-toggle button {
+    padding: 10px 20px;
+    border: none;
+    background: #3498db;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-section input {
+    padding: 10px;
+    width: 70%;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.search-section button {
+    padding: 10px;
+    border: none;
+    background: #e74c3c;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.favorites {
+    margin: 20px 0;
+}
+
+.current-weather {
+    display: none;
+    margin-top: 20px;
+}
+
+.forecast,
+.weekly-forecast {
+    display: none;
+    margin-top: 20px;
+}
+
+.forecast-item,
+.hourly-item {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.forecast-item img,
+.hourly-item img {
+    width: 50px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
